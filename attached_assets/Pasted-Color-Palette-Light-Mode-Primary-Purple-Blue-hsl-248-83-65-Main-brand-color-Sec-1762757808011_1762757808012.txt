@@ -1,0 +1,91 @@
+Color Palette
+Light Mode
+
+    Primary: Purple/Blue hsl(248, 83%, 65%) - Main brand color
+    Secondary: Purple hsl(268, 77%, 69%) - Accent color
+    Accent: Cyan hsl(188, 94%, 43%) - Highlight color
+    Background: White hsl(0, 0%, 100%)
+    Foreground: Dark Navy hsl(222, 84%, 4.9%)
+    Border: Light Gray hsl(214, 32%, 91%)
+    Destructive: Red hsl(0, 84%, 60%)
+
+Dark Mode
+
+    Background: Dark Navy hsl(222, 84%, 4.9%)
+    Foreground: Light Gray hsl(210, 40%, 98%)
+    Same primary, secondary, and accent colors maintained
+    Adjusted borders and muted tones for dark backgrounds
+
+Typography
+
+    Font Family: Inter (sans-serif)
+    Smoothing: Antialiased text
+    Mobile Font Size: 16px minimum (prevents zoom on iOS)
+    Line Height: 1.6 for body text
+    Scroll: Smooth scrolling enabled
+
+Design Patterns
+Gradients
+
+    Gradient Text: Purple → Pink → Cyan → Blue with animated flow
+    Button Primary: Blue → Purple → Indigo gradient
+    Button Secondary: Emerald → Teal gradient
+    Mesh Background: Purple gradient with animated shift
+
+Card Styles
+
+    Glass Card: Frosted glass effect with backdrop blur and border shine
+    Feature Card: White gradient background with hover lift and shine effect
+    Service Preview: Animated border glow with multi-color gradient
+
+Buttons
+
+    Primary: Blue-purple gradient with shimmer on hover, lifts -8px
+    Secondary: Emerald-teal gradient with shimmer on hover
+    Hover Effects: Shadow expansion, scale to 105%, -8px lift
+    Touch Feedback: Scale down to 98% on active
+
+Animations
+
+    Fade In: 1.2s ease-out
+    Slide Up: 1s ease-out with 30px translation
+    Float: 6s infinite ease-in-out (-15px movement)
+    Gradient Flow: 6s infinite color position shift
+    Border Glow: 3s infinite multi-color border animation
+    Hover Lift: -16px lift with scale and shadow on hover (700ms duration)
+
+Responsive Breakpoints
+
+    sm: 640px
+    md: 768px
+    lg: 1024px
+    xl: 1280px
+    2xl: 1440px
+
+Mobile Optimizations
+
+    Minimum touch target: 44x44px (accessibility standard)
+    Tap highlight disabled (custom purple highlight on clickables)
+    Font size locked at 16px for inputs (prevents iOS zoom)
+    Reduced animations for users with motion sensitivity preferences
+    High contrast mode support with enhanced borders
+
+Custom Utility Classes
+
+    .gradient-text - Animated multi-color gradient text
+    .glass-card - Frosted glass card effect
+    .hover-lift - Smooth lift animation on hover
+    .btn-primary / .btn-secondary - Gradient buttons with shimmer
+    .feature-card - Enhanced card with shine effect
+    .icon-gradient - Gradient background for icons
+    .section-padding - Responsive vertical padding
+    .container-custom - Max-width container with responsive padding
+
+Special Effects
+
+    Shimmer Effect: Horizontal light sweep on hover
+    Border Glow: Animated rainbow border on service previews
+    Custom Scrollbar: Emerald/teal themed thin scrollbar
+    Video Containers: Auto-centered with aspect ratio preservation
+
+This is a modern, vibrant AI agency theme with strong purple/blue branding, smooth animations, and glassmorphism effects throughout.

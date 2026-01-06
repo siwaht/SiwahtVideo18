@@ -1,0 +1,176 @@
+{
+  "media": [
+    {
+      "id": "df0da771-3931-4c7b-9802-9176e730fe8c",
+      "title": "English Voice Ad",
+      "category": "Professional Multilingual Voice Ads",
+      "description": "Professional English voice ad showcasing premium brand messaging and clear articulation for global markets.",
+      "fileType": "audio",
+      "originalFilename": "dub-original-english-web.mp3",
+      "compressedFilePath": "/audio/dub-original-english-web.mp3",
+      "duration": "27",
+      "fileSize": "432000",
+      "metadata": {
+        "codec": "mp3",
+        "bitrate": "128k"
+      },
+      "audioMetadata": {
+        "language": "English",
+        "gender": "professional",
+        "accent": "native",
+        "ageRange": "adult"
+      },
+      "createdAt": "2025-08-24T13:45:09.070Z",
+      "updatedAt": "2025-08-24T13:45:09.071Z"
+    },
+    {
+      "id": "ccac16e6-8981-43bc-862a-4f174d3edb0e",
+      "title": "中文语音广告",
+      "category": "Professional Multilingual Voice Ads",
+      "description": "专业的中文语音广告，展现品牌优势和清晰表达，适合中国市场推广。",
+      "fileType": "audio",
+      "originalFilename": "dub-original-chinese-web.mp3",
+      "compressedFilePath": "/audio/dub-original-chinese-web.mp3",
+      "duration": "27",
+      "fileSize": "432000",
+      "metadata": {
+        "codec": "mp3",
+        "bitrate": "128k"
+      },
+      "audioMetadata": {
+        "language": "中文",
+        "gender": "专业",
+        "accent": "标准",
+        "ageRange": "成人"
+      },
+      "createdAt": "2025-08-24T13:45:09.071Z",
+      "updatedAt": "2025-08-24T13:45:09.071Z"
+    },
+    {
+      "id": "b80d70cc-8a4e-4fd8-bb59-f4c8510fe8c4",
+      "title": "Context is King: Engineering the Brains, and Nightmares, of AI Agents",
+      "category": "AI Podcast Production",
+      "description": "The era of simple \"prompt engineering\" is over. We explore why \"context engineering\" is the critical discipline for building powerful AI agents.",
+      "fileType": "audio",
+      "originalFilename": "context-is-king-web.mp3",
+      "compressedFilePath": "/audio/context-is-king-web.mp3",
+      "duration": "92",
+      "fileSize": "1472000",
+      "metadata": {
+        "codec": "mp3",
+        "bitrate": "128k"
+      },
+      "audioMetadata": {
+        "episodeType": "Short Episode",
+        "tags": [
+          "technology"
+        ]
+      },
+      "createdAt": "2025-08-24T13:45:09.071Z",
+      "updatedAt": "2025-08-24T13:45:09.071Z"
+    },
+    {
+      "id": "a01674e9-f967-4249-bb75-1cb723114ffa",
+      "title": "Fasten Your Nightmares",
+      "category": "AI Podcast Production",
+      "description": "Forget ghosts and ghouls; the real horror is at 30,000 feet, and it's asking for a pen.",
+      "fileType": "audio",
+      "originalFilename": "fasten-your-nightmares-web.mp3",
+      "compressedFilePath": "/audio/fasten-your-nightmares-web.mp3",
+      "duration": "51",
+      "fileSize": "816000",
+      "metadata": {
+        "codec": "mp3",
+        "bitrate": "128k"
+      },
+      "audioMetadata": {
+        "episodeType": "Short Episode",
+        "tags": [
+          "comedy"
+        ]
+      },
+      "createdAt": "2025-08-24T13:45:09.071Z",
+      "updatedAt": "2025-08-24T13:45:09.071Z"
+    },
+    {
+      "id": "77cf35af-a700-4a02-8a8c-cec237d4ce72",
+      "title": "إعلان صوتي عربي",
+      "category": "Professional Multilingual Voice Ads",
+      "description": "إعلان صوتي عربي احترافي يعرض رسائل العلامة التجارية المتميزة والتعبير الواضح للأسواق العربية.",
+      "fileType": "audio",
+      "originalFilename": "dub-arabic-web.mp3",
+      "compressedFilePath": "/audio/dub-arabic-web.mp3",
+      "duration": "27",
+      "fileSize": "432000",
+      "metadata": {
+        "codec": "mp3",
+        "bitrate": "128k"
+      },
+      "audioMetadata": {
+        "language": "عربي",
+        "gender": "محترف",
+        "accent": "أصلي",
+        "ageRange": "بالغ"
+      },
+      "createdAt": "2025-08-24T13:52:08.721Z",
+      "updatedAt": "2025-08-24T13:52:08.722Z"
+    },
+    {
+      "id": "a0d56ce2-b588-4104-851a-1a07667a3454",
+      "title": "main",
+      "category": "AI Video Studio",
+      "fileType": "video",
+      "originalFilename": "japenese market.mp4",
+      "compressedFilePath": "/uploads/compressed/japenese market-1756063764778-cf09a141.mp4",
+      "thumbnailPath": "/uploads/thumbnails/japenese market-1756063764778-cf09a141.jpg",
+      "duration": "8",
+      "fileSize": "2164029",
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "codec": "h264",
+        "bitrate": "4412771"
+      },
+      "createdAt": "2025-08-24T19:29:31.454Z",
+      "updatedAt": "2025-08-24T19:29:31.454Z"
+    },
+    {
+      "id": "aaef9a85-2d7d-4901-b6f3-1f84040d9cb1",
+      "title": "editing",
+      "category": "AI Video Editing",
+      "fileType": "video",
+      "originalFilename": "My_companys_name_siwahtcom_services_20250.mp4",
+      "compressedFilePath": "/uploads/compressed/My_companys_name_siwahtcom_services_20250-1756065675474-17c3a76e.mp4",
+      "thumbnailPath": "/uploads/thumbnails/My_companys_name_siwahtcom_services_20250-1756065675474-17c3a76e.jpg",
+      "duration": "8",
+      "fileSize": "1481980",
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "codec": "h264",
+        "bitrate": "4580054"
+      },
+      "createdAt": "2025-08-24T20:01:19.180Z",
+      "updatedAt": "2025-08-24T20:01:19.180Z"
+    },
+    {
+      "id": "d38e3d41-9408-4a8a-ae7d-011e5f55fc15",
+      "title": "avatar",
+      "category": "Avatar Studio",
+      "fileType": "video",
+      "originalFilename": "Scene_an_art_202508221705_7rcmu.mp4",
+      "compressedFilePath": "/uploads/compressed/Scene_an_art_202508221705_7rcmu-1756065838599-10ba9804.mp4",
+      "thumbnailPath": "/uploads/thumbnails/Scene_an_art_202508221705_7rcmu-1756065838599-10ba9804.jpg",
+      "duration": "8",
+      "fileSize": "663852",
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "codec": "h264",
+        "bitrate": "1837717"
+      },
+      "createdAt": "2025-08-24T20:04:01.180Z",
+      "updatedAt": "2025-08-24T20:04:01.180Z"
+    }
+  ]
+}

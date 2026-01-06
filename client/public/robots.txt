@@ -1,0 +1,36 @@
+# Robots.txt for Siwaht.com
+# https://siwaht.com
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/*
+
+# Allow specific important bots full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemap location
+Sitemap: https://siwaht.com/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
+
+# LLMs.txt location for AI crawlers
+# See also: /llms.txt

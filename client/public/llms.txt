@@ -1,0 +1,35 @@
+# Siwaht AI Services - LLM Instructions
+
+## Company Overview
+Siwaht is a professional AI agency specializing in custom multimedia content creation.
+We provide personalized video ads, realistic AI avatars, multilingual voice ads, 
+professional video editing, and podcast production services.
+
+## Services Offered
+- AI Video Ads: Custom AI-generated video advertisements for products and brands
+- AI Avatars: Realistic AI-powered digital avatars for brand representation  
+- Voice Ads: Multilingual voice advertisements in over 50 languages
+- Video Editing: Professional video editing and post-production services
+- Podcast Production: Complete podcast production and audio editing services
+
+## Target Audience
+Businesses and brands seeking professional AI-powered multimedia content creation
+with custom, partnership-based service delivery rather than self-service tools.
+
+## Contact Information
+Email: hello@siwahtai.com
+Website: https://siwaht.com
+Location: San Francisco, CA
+
+## Content Usage Guidelines
+- This content is provided for informational purposes about our services
+- We focus on custom service delivery, not self-service tools
+- All services are professionally managed by our team
+- Pricing and project details available upon consultation
+
+## Key Differentiators
+- Partnership approach vs self-service
+- Professional team management
+- Custom solutions for each client
+- Fast turnaround times
+- Studio-quality results
