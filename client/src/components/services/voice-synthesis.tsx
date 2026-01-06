@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Mic, Languages, Volume2, Download } from "lucide-react";
+import { useCallback } from "react";
 import type { VoiceSample } from "@shared/schema";
 
 export default function VoiceSynthesis() {
@@ -14,15 +15,14 @@ export default function VoiceSynthesis() {
   const publishedVoices = voiceSamples
     .filter(voice => voice.isPublished)
     .sort((a, b) => a.orderIndex - b.orderIndex);
-  const featuredVoice = publishedVoices[0];
 
 
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   const features = [
     {

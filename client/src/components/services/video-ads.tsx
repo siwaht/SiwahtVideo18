@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Play, Target, Zap, Sparkles } from "lucide-react";
+import { useCallback } from "react";
 import { VideoPlayer } from "@/components/ui/video-player";
 import { processVideoUrl, getPlatformName } from "@/lib/videoUtils";
 import type { DemoVideo } from "@shared/schema";
@@ -22,12 +23,12 @@ export default function VideoAds() {
   const processedVideo = featuredVideo?.videoUrl ? processVideoUrl(featuredVideo.videoUrl) : null;
 
 
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   const features = [
     {

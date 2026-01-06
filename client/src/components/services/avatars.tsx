@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { User, Sparkles, Settings, Download, Volume2, VolumeX } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import type { Avatar } from "@shared/schema";
 
@@ -54,12 +54,12 @@ export default function Avatars() {
     };
   }, [featuredAvatar?.videoUrl]);
 
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   const features = [
     {

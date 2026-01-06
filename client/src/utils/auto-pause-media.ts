@@ -4,6 +4,7 @@
  */
 
 let globalObserver: IntersectionObserver | null = null;
+let mutationObserverInstance: MutationObserver | null = null;
 const observedElements = new Set<HTMLMediaElement>();
 
 interface MediaState {
@@ -31,8 +32,8 @@ export function initializeAutoPauseMedia() {
         if (isVisible) {
           // Media is visible
           if (state.shouldAutoResume && media.paused) {
-            media.play().catch((error) => {
-              console.log('Auto-resume failed:', error);
+            media.play().catch(() => {
+              // Silently handle auto-play failures
             });
             state.shouldAutoResume = false;
           }
@@ -42,7 +43,6 @@ export function initializeAutoPauseMedia() {
             state.wasPlaying = true;
             state.shouldAutoResume = true;
             media.pause();
-            console.log('Auto-paused media:', media.src || media.currentSrc);
           }
         }
 
@@ -59,7 +59,7 @@ export function initializeAutoPauseMedia() {
   startObservingAllMedia();
 
   // Set up mutation observer to catch dynamically added media
-  const mutationObserver = new MutationObserver((mutations) => {
+  mutationObserverInstance = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       mutation.addedNodes.forEach((node) => {
         if (node.nodeType === Node.ELEMENT_NODE) {
@@ -78,7 +78,7 @@ export function initializeAutoPauseMedia() {
     });
   });
 
-  mutationObserver.observe(document.body, {
+  mutationObserverInstance.observe(document.body, {
     childList: true,
     subtree: true
   });
@@ -105,6 +105,10 @@ export function cleanupAutoPauseMedia() {
   if (globalObserver) {
     globalObserver.disconnect();
     globalObserver = null;
+  }
+  if (mutationObserverInstance) {
+    mutationObserverInstance.disconnect();
+    mutationObserverInstance = null;
   }
   observedElements.clear();
 }

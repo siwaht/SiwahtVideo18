@@ -1,8 +1,7 @@
-
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
+import { useMutation } from "@tanstack/react-query";
+import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -21,7 +20,6 @@ import { apiRequest } from "@/lib/queryClient";
 
 export default function Contact() {
   const { toast } = useToast();
-  const queryClient = useQueryClient();
 
   const form = useForm<InsertContactSubmission>({
     resolver: zodResolver(insertContactSubmissionSchema),

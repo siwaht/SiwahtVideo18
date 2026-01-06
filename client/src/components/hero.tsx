@@ -1,19 +1,20 @@
 import { Video, UserCircle, Mic, Play } from "lucide-react";
+import { useCallback } from "react";
 
 export default function Hero() {
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
-  const scrollToServices = () => {
+  const scrollToServices = useCallback(() => {
     const element = document.getElementById("services");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   return (
     <section 

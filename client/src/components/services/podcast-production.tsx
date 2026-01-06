@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Headphones, Volume2, Mic2, Radio, Play, Pause, Calendar, User, Users } from "lucide-react";
+import { Headphones, Volume2, Mic2, Radio, User, Users, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -22,20 +22,18 @@ interface PodcastSample {
 }
 
 export default function PodcastProduction() {
-  const [playingAudio, setPlayingAudio] = useState<string | null>(null);
-
   const { data: podcastSamples, isLoading, error } = useQuery({
     queryKey: ["/api/samples/podcast-samples"],
     refetchOnWindowFocus: false,
     staleTime: 5 * 60 * 1000,
   });
 
-  const scrollToContact = () => {
+  const scrollToContact = useCallback(() => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, []);
 
   const features = [
     {

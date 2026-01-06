@@ -38,9 +38,6 @@ import {
   Trash2,
   Film,
   Music,
-  Calendar,
-  HardDrive,
-  Clock,
   Home,
 } from "lucide-react";
 import { format } from "date-fns";
@@ -229,11 +226,17 @@ export default function AdminDashboard() {
         setUploadProgress((prev) => Math.min(prev + 10, 90));
       }, 500);
 
-      const response = await fetch("/api/admin/media/upload", {
-        method: "POST",
-        credentials: "include",
-        body: uploadData,
-      });
+      let response: Response;
+      try {
+        response = await fetch("/api/admin/media/upload", {
+          method: "POST",
+          credentials: "include",
+          body: uploadData,
+        });
+      } catch (fetchError) {
+        clearInterval(interval);
+        throw fetchError;
+      }
 
       clearInterval(interval);
       setUploadProgress(100);
