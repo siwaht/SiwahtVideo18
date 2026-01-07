@@ -37,6 +37,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
           updatedAt: media.updatedAt
         }));
 
+      // Return default demo video if none exist
+      if (demoVideos.length === 0) {
+        return res.json([{
+          id: "default-demo-1",
+          title: "AI Video Ad Demo",
+          description: "Professional AI-generated video advertisement showcasing our capabilities",
+          videoUrl: "https://gumlet.tv/watch/694d0e18f1ad267a06552696",
+          thumbnailUrl: null,
+          category: "demo",
+          duration: "30s",
+          orderIndex: 0,
+          isPublished: true,
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString()
+        }]);
+      }
+
       res.json(demoVideos);
     } catch (error) {
       console.error("Error fetching demo videos:", error);

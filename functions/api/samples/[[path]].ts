@@ -36,6 +36,23 @@ const categoryMap: Record<string, string> = {
   "podcast-samples": "AI Podcast Production"
 };
 
+// Default demo content when no media exists in KV
+const defaultDemoVideos = [
+  {
+    id: "default-demo-1",
+    title: "AI Video Ad Demo",
+    description: "Professional AI-generated video advertisement showcasing our capabilities",
+    videoUrl: "https://gumlet.tv/watch/694d0e18f1ad267a06552696",
+    thumbnailUrl: null,
+    category: "demo",
+    duration: "30s",
+    orderIndex: 0,
+    isPublished: true,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  }
+];
+
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const { env, params } = context;
   
@@ -82,6 +99,10 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
             createdAt: media.createdAt,
             updatedAt: media.updatedAt
           }));
+        // Return default demo videos if none exist
+        if (result.length === 0) {
+          result = defaultDemoVideos;
+        }
         break;
         
       case "avatars":
